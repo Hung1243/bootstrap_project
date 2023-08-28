@@ -1,5 +1,57 @@
+/* Reset css */
+
+
+body,html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+/* PLANS */
+
+
 .pricing-bottom ul li{
     list-style: none;
 }
 
 
+/* FEEDBACKS */
+.pooch-feedbacks{
+    background-color: #f9f7fe;
+}
+
+.pooch-feedbacks .item{
+    border-radius: 10px;
+    background: white;
+    margin-right: 10px;
+
+}
+.pooch-feedbacks .item-wrapper{
+    padding: 40px 30px;
+}
+
+.fb-top q::before {
+    font-size: 50px;
+    color: #189A46;
+    line-height: 0.8;
+    padding-top: 8px;
+    font-weight: 600;
+    font-family: "Merriweather", serif;
+    quotes:'\201C';
+    
+}
+.fb-img{
+    width: 70px;
+    height: 70px;
+}
+
+
+.fb-bottom img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.fb-bottom .author{
+    margin-left: 18px;
+}
