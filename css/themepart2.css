@@ -55,3 +55,19 @@ body,html {
 .fb-bottom .author{
     margin-left: 18px;
 }
+
+
+/* footer */
+
+footer h5 {
+    color: white;
+}
+
+footer li , footer i{
+    color:#696969 ;
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: #696969;
+}
