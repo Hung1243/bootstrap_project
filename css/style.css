@@ -1,0 +1,75 @@
+/* CSS cho .header */
+.header {
+  background-color: #fff; /* Đổi màu nền thành màu trắng */
+}
+
+/* CSS cho .brand */
+.brand {
+  color: #00a651;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+/* CSS cho .nav-menu */
+.nav-menu {
+  font-size: 19px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-menu .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-menu .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00a651;
+  transition: width 0.3s ease;
+}
+
+.nav-menu .nav-link:hover:before {
+  width: 100%;
+}
+
+/* CSS cho icon "fa fa-search" */
+.nav-search .nav-link i {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho icon "fa fa-search" */
+.nav-search .nav-link i:hover {
+  background-color: #00a651;
+  color: white;
+}
+
+/* CSS cho .nav-theme */
+.nav-theme .nav-link i {
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho icon "fa fa-sun" */
+.nav-theme .nav-link i:hover {
+  background-color: #00a651;
+  color: white;
+}
+
+/* CSS cho ul nav-icons */
+.nav-icons {
+  display: inline-flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px; /* Khoảng cách ngang giữa icon */
+}
