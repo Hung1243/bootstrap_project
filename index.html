@@ -115,8 +115,102 @@
       </nav>
     </header>
     <div class="header-fixed-space-height"></div>
+    <!-- header -->
 
-    <!-- <main>
+    <section class="main-slider">
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+          <div
+            class="banner-info"
+            style="background-image: url('./img/banner1.jpg')"
+          >
+            <div class="container">
+              <div class="banner-info-bg text-left">
+                <h5 class="BannerSlider">Quality Things for Loving Pets</h5>
+                <p>Keeps your Pet Smiling</p>
+                <a
+                  class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  href="about"
+                >
+                  Read More</a
+                >
+                <a class="btn btn-style border-btn mt-sm-5 mt-4" href="contact">
+                  Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="banner-info"
+            style="background-image: url('./img/banner2.jpg')"
+          >
+            <div class="container">
+              <div class="banner-info-bg ml-lg-auto">
+                <h5>Delivering happiness for Pets</h5>
+                <p>For the love of pets</p>
+                <a
+                  class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  href="about"
+                >
+                  Read More</a
+                >
+                <a class="btn btn-style border-btn mt-sm-5 mt-4" href="contact">
+                  Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="banner-info"
+            style="background-image: url('./img/banner1.jpg')"
+          >
+            <div class="container">
+              <div class="banner-info-bg ml-lg-auto">
+                <h5>Delivering happiness for Pets</h5>
+                <p>For the love of pets</p>
+                <a
+                  class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  href="about"
+                >
+                  Read More</a
+                >
+                <a class="btn btn-style border-btn mt-sm-5 mt-4" href="contact">
+                  Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="banner-info"
+            style="background-image: url('./img/banner2.jpg')"
+          >
+            <div class="container">
+              <div class="banner-info-bg ml-lg-auto">
+                <h5>Delivering happiness for Pets</h5>
+                <p>For the love of pets</p>
+                <a
+                  class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  href="about"
+                >
+                  Read More</a
+                >
+                <a class="btn btn-style border-btn mt-sm-5 mt-4" href="contact">
+                  Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
       <div class="pooch-plans py-5">
         <div class="container">
           <p class="text-danger fw-bold text-center">Our Plans</p>
@@ -380,7 +474,7 @@
       </div>
 
       <div class="pooch-newsletter"></div>
-    </main> -->
+    </main>
 
     <footer></footer>
     <script
@@ -425,6 +519,39 @@
             items: 2,
           },
         },
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-one").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          items: 1, // Đặt số lượng slide hiển thị là 1
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: true,
+            },
+            1000: {
+              items: 1,
+              nav: true,
+            },
+          },
+        });
       });
     </script>
   </body>

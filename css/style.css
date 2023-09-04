@@ -73,3 +73,87 @@
   margin: 0;
   margin-left: 10px; /* Khoảng cách ngang giữa icon */
 }
+/*slider*/
+
+/* Hiển thị mỗi hình ảnh trong một slide và đặt hình nền */
+.main-slider .owl-carousel .item {
+  height: 544px;
+  min-height: calc(100vh - 90px);
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 3em 0;
+}
+
+/* Đặt hình nền cho mỗi slide riêng lẻ */
+.main-slider .owl-carousel .item:nth-child(1)::before {
+  content: "";
+  background-image: url("../img/banner1.jpg"); /* Đường dẫn đến hình ảnh cho slide 1 */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-slider .owl-carousel .item:nth-child(2)::before {
+  content: "";
+  background-image: url("../img/banner2.jpg"); /* Đường dẫn đến hình ảnh cho slide 2 */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Tương tự cho slide 3 và slide 4 */
+.main-slider .owl-carousel .item:nth-child(3)::before {
+  content: "";
+  background-image: url("../img/banner3.jpg"); /* Đường dẫn đến hình ảnh cho slide 3 */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-slider .owl-carousel .item:nth-child(4)::before {
+  content: "";
+  background-image: url("../img/banner4.jpg"); /* Đường dẫn đến hình ảnh cho slide 4 */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Đặt kích thước container bên trong mỗi slide */
+.main-slider .owl-carousel .item .container {
+  width: 1519px;
+}
+
+.main-slider .owl-carousel .item h5 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.main-slider .owl-carousel .item p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.main-slider .owl-carousel .item a.btn {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #333;
+}
