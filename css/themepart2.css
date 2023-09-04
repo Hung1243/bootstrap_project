@@ -1,19 +1,40 @@
 /* Reset css */
 
 
-body,html {
+body, html {
     padding: 0;
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
 
+h2{
+    font-size: 2.5rem;
+}
+
 /* PLANS */
 
-
+.pooch-plans{
+    background: rgba(147, 107, 232, 0.05);
+}
 .pricing-bottom ul li{
     list-style: none;
 }
+.block-pricing{
+    background: white;
+}
+.block-pricing .btn-primary {
+    color: #fff;
+    background-color: #189A46;
+    border-color: #189A46;
+    padding: 10px 35px;
+    font-size: 1.1rem;
 
+}
+.block-pricing .btn-primary:hover{
+    background-color: #116E32;
+    border-color: #116E32;
+    transition: all 0.5s;
+}
 
 /* FEEDBACKS */
 .pooch-feedbacks{
@@ -55,19 +76,92 @@ body,html {
 .fb-bottom .author{
     margin-left: 18px;
 }
+/* VIDEO */
+
+.pooch-video p{
+    color: #696969;
+    font-size: 1.2rem
+}
+
+/* NEWSLETTER */
+
+.newsletter-wrapper{
+    max-width: 650px;
+}
+
+.newsletter-wrapper p{
+    color: #696969;
+    font-size: 1.2rem;
+}
+
+.pooch-newsletter .form-control {
+    height: 60px;
+    width: 455px;
+}
+
+.pooch-newsletter .btn-primary {
+    color: #fff;
+    background-color: #189A46;
+    border-color: #189A46;
+    padding: 10px 35px;
+    flex-basis: 27%;
+    font-size: 1.1rem;
+}
+
+.pooch-newsletter .btn-primary:hover{
+    background-color: #116E32;
+    border-color: #116E32;
+    transition: all 0.5s;
+}
 
 
+@media only screen and (max-width: 667px) {
+.pooch-newsletter .btn-primary{
+    flex-basis: 100%;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+}
 /* footer */
 
 footer h5 {
     color: white;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
+footer ul {
+    padding-left: 0;
+}
 footer li , footer i{
     color:#696969 ;
     list-style: none;
+    line-height: 2;
 }
+
+footer i{
+    margin-right: 15px;
+}
+
 footer a{
     text-decoration: none;
     color: #696969;
+}
+
+.footer-copyright{
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+
+.footer-copyright p {
+    color: #696969;
+}
+
+.footer-copyright span{
+    color: #f53626;
+}
+
+.footer-copyright span:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
