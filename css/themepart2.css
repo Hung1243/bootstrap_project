@@ -11,6 +11,11 @@ h2{
     font-size: 2.5rem;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 /* PLANS */
 
 .pooch-plans{
@@ -19,21 +24,69 @@ h2{
 .pricing-bottom ul li{
     list-style: none;
 }
+
+.block-pricing h3{
+    font-weight: 600;
+}
+.block-pricing h4{
+    margin: 15px 0 20px ;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #189A46;
+}
+
+.block-pricing h4 label{
+    font-size: 1.5rem;
+    vertical-align: text-top;
+}
+.block-pricing span{
+    font-size: 1rem;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+
 .block-pricing{
     background: white;
 }
+
+.block-pricing-1, .block-pricing-3{
+    padding: 55px 40px;
+}
+.block-pricing-2 h3, .block-pricing-2 h4, .block-pricing-2 span{
+    color: white;
+}
+
 .block-pricing .btn-primary {
     color: #fff;
     background-color: #189A46;
     border-color: #189A46;
     padding: 10px 35px;
     font-size: 1.1rem;
+}
 
+.block-pricing-2 .pricing-top{
+    background: #189A46;
 }
 .block-pricing .btn-primary:hover{
     background-color: #116E32;
     border-color: #116E32;
     transition: all 0.5s;
+}
+.pricing-bottom li{
+    color: #696969;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.block-pricing-standard{
+    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    z-index: 1;
+}
+@media only screen and (max-width: 990px) {
+    .pricing-wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 /* FEEDBACKS */
@@ -76,6 +129,13 @@ h2{
 .fb-bottom .author{
     margin-left: 18px;
 }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    width: 30px;
+    background: #189A46;
+    height: 10px;
+}
+
 /* VIDEO */
 
 .pooch-video p{
@@ -96,7 +156,8 @@ h2{
 
 .pooch-newsletter .form-control {
     height: 60px;
-    width: 455px;
+    flex-basis: 70%;
+    /* width: 455px; */
 }
 
 .pooch-newsletter .btn-primary {
@@ -131,9 +192,7 @@ footer h5 {
     font-weight: 600;
 }
 
-footer ul {
-    padding-left: 0;
-}
+
 footer li , footer i{
     color:#696969 ;
     list-style: none;
