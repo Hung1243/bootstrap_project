@@ -40,7 +40,9 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
-    <!-- CSS Part 2 -->
+    <!-- VIDEO POPUP CSS -->
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <!-- main CSS Part 2 -->
     <link rel="stylesheet" href="./css/themepart2.css" />
   </head>
 
@@ -53,7 +55,7 @@
           <p class="text-danger fw-bold">Our Plans</p>
           <h2 class="fw-bold mb-5">Affordable Packages</h2>
 
-          <div class="pricing-wrapper row">
+          <div class="pricing-wrapper w-75 mx-auto row">
             <div class="block-pricing-free col-lg-4 px-0 align-self-center">
               <div class="block-pricing block-pricing-1 rounded-3">
                 <div class="pricing-top">
@@ -131,15 +133,42 @@
 
       <div class="pooch-video py-5 text-center">
         <div class="container">
-          <p class="text-danger">BETTER PET NUTRITION.</p>
-          <h2 class="fw-bold">The Finest Fresh Food And All Your Pet Needs.</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum
-            dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit
-            amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
-            officia.
-          </p>
-          <iframe src="https://player.vimeo.com/video/101587706"></iframe>
+          <div class="video-wrapper">
+            <div>
+              <p class="text-danger">BETTER PET NUTRITION.</p>
+              <h2 class="fw-bold">
+                The Finest Fresh Food And All Your Pet Needs.
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+                ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+                dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+                explicabo officia.
+              </p>
+            </div>
+            <div class="position-relative">
+              <img
+                src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/banner2.jpg"
+                alt="video"
+              />
+              <a
+                href="#small-dialog"
+                class="popup-with-zoom-anim play-view text-center position-absolute"
+              >
+                <span class="video-play-icon">
+                  <span class="fa fa-play"></span>
+                </span>
+              </a>
+              <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                <iframe
+                  src="https://player.vimeo.com/video/101587706"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pooch-feedbacks py-5">
@@ -409,7 +438,9 @@
         </div>
       </div>
     </footer>
-
+    <a href="#" class="backtotop cd-top text-replace js-cd-top rounded-circle">
+      <i class="fa fa-angle-up"></i>
+    </a>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -452,6 +483,47 @@
             items: 2,
           },
         },
+      });
+    </script>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/util.js"></script>
+
+    <!-- VIDEO POPUP JS-->
+    <script src="./JS/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+
+        $(".popup-with-move-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-slide-bottom",
+        });
       });
     </script>
   </body>
