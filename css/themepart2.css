@@ -98,6 +98,7 @@ ul {
     margin-top: 18px;
   }
 }
+
 /* FEEDBACKS */
 .pooch-feedbacks {
   background-color: #f9f7fe;
@@ -271,6 +272,10 @@ div#small-dialog iframe {
     margin-top: 15px;
   }
 }
+.newsletter-wrapper .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #189A46;
+}
 /* footer */
 
 footer h5 {
@@ -342,6 +347,27 @@ footer a:hover {
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
+}
+
+/* DARK THEME */
+
+.dark .pooch-plans, .dark .pooch-feedbacks {
+background: #222;
+}
+
+.dark .pooch-newsletter, .dark .pooch-feedbacks .item-wrapper, .dark .block-pricing{
+  background-color: #151515;
+}
+.dark .pooch-plans h2, .dark .pooch-video h2, .dark .pooch-feedbacks h2, .dark .pooch-newsletter h2, .dark .pooch-plans h3{
+  color: #dddddd;
+}
+
+.dark .pooch-plans li, .dark .pooch-video p, .dark .pooch-newsletter p{
+  color: #afafaf;
+}
+
+.dark .pooch-feedbacks q{
+  color: #696969;
 }
 
 @keyframes ripple {

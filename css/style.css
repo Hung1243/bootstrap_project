@@ -40,6 +40,9 @@ p {
   position: relative;
   transition: color 0.3s ease;
 }
+.navbar-nav .nav-link.active {
+  color: #00a651;
+}
 
 .nav-menu .nav-link:before {
   content: "";
@@ -72,7 +75,7 @@ li a.search-search {
   border: none;
 }
 
-li a.search-search:hover {
+.navbar-nav li a.search-search:hover {
   background: #189a46;
   color: #fff;
 }
@@ -203,14 +206,54 @@ ul.navbar-nav.search-right {
 .dark #switchButton .fa-moon {
   display: none;
 }
-/* .dark .card {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-} */
 
 .dark .header {
+  background-color: #000;
+}
+.dark .header a {
+  color: #ddd;
+}
+.dark .header .navbar-toggle {
+  background-color: #00a651;
+}
+.dark .header .btn {
+  background-color: #222;
+}
+.dark .aboutUs .aboutUs-title,
+.dark .aboutUs .aboutUs-text,
+.dark .aboutUs .read,
+.dark .aboutUs .aboutUs-text,
+.dark .services .services-text p {
   background: #000;
+  color: #afafaf;
+}
+.dark .features {
+  background-color: #222;
+}
+
+.dark .features .area-box {
+  background-color: #151515;
+}
+.dark .features .area-box:hover {
+  background-color: #222;
+}
+.dark .features .area-box .title-head,
+.dark .features .area-box a,
+.dark .features {
+  color: #fff;
+}
+.dark .features .area-box p {
+  color: #afafaf;
+}
+
+.dark .services .services-text h3 {
+  color: #fff;
+}
+.dark .services .services-text ul .fa {
+  background-color: #222;
+}
+.dark .services .services-text li {
+  color: #fff;
 }
 
 /*slider*/
@@ -260,7 +303,7 @@ ul.navbar-nav.search-right {
   bottom: 25%;
 }
 
-@media (min-width: 996px) {
+@media (min-width: 1246px) {
   .slide-2,
   .slide-4 {
     left: 670px;
@@ -480,7 +523,7 @@ a.read:hover {
   color: #189a46;
   margin-right: 12px;
   background: #936be80d;
-  font-size: 10px;
+  font-size: 15px;
   padding: 8px;
   border-radius: 50%;
   display: inline-block;
