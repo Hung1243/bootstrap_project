@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="./css/themepart2.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <!--header-->
     <header class="header fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -103,15 +103,43 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <ul class="nav-icons">
-              <li class="nav-search mt-lg-0 mt-2">
-                <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+            <ul class="navbar-nav search-right mt-lg-0 mt-2">
+              <li class="nav-item" title="Search">
+                <a href="#search" class="btn search-search">
+                  <span class="fa fa-search" aria-hidden="true"></span>
+                </a>
+                <div id="search" class="popup-overlay">
+                  <div class="search-popup">
+                    <form action="#" method="get" class="d-sm-flex">
+                      <input
+                        type="search"
+                        name="s"
+                        placeholder="Search.."
+                        required="required"
+                        autofocus=""
+                      />
+
+                      <button type="submit">Search</button>
+                      <a class="close" href="#url">&times;</a>
+                    </form>
+                  </div>
+                </div>
+                <!-- /search search-popup -->
               </li>
             </ul>
           </div>
-          <div>
-            <div class="nav-theme">
-              <a class="nav-link" href="#"><i class="fa fa-sun"></i></a>
+          <!--dark mode-->
+          <div class="container">
+            <!-- style="width: 18rem" class="mx-auto py-3" -->
+            <div class="theme-btn">
+              <button
+                class="btn"
+                id="switchButton"
+                title="Click to switch theme"
+              >
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -405,7 +433,7 @@
           <p class="text-danger fw-bold">Our Plans</p>
           <h2 class="fw-bold mb-5">Affordable Packages</h2>
 
-          <div class="pricing-wrapper w-75 mx-auto row">
+          <div class="pricing-wrapper mx-auto row">
             <div class="block-pricing-free col-lg-4 px-0 align-self-center">
               <div class="block-pricing block-pricing-1 rounded-3">
                 <div class="pricing-top">
@@ -432,7 +460,7 @@
               <div class="block-pricing block-pricing-2 rounded-3">
                 <div class="pricing-top px-5 pt-5 pb-2 rounded-top">
                   <p
-                    class="text-success fw-bold bg-white d-inline-block py-2 px-3 rounded-2"
+                    class="text-success fw-bold bg-white d-inline-block py-2 px-3 rounded-2 mb-4"
                   >
                     SAVE 10%
                   </p>
@@ -496,7 +524,7 @@
                 explicabo officia.
               </p>
             </div>
-            <div class="position-relative">
+            <div class="position-relative mt-5">
               <img
                 src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/banner2.jpg"
                 alt="video"
@@ -704,7 +732,7 @@
                   ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut
                   rhoncus turpis sodales quis. Integer sit amet mattis quam.
                 </p>
-                <form class="">
+                <form class="mt-5">
                   <div class="d-md-flex flex-wrap justify-content-between">
                     <input
                       type="email"
@@ -755,25 +783,25 @@
               <div class="Archives col-sm-4 col-6 mt-5">
                 <h5>Archives</h5>
                 <ul>
-                  <li>December 2020</li>
+                  <li><a href="">December 2020</a></li>
                 </ul>
               </div>
               <div class="Categories col-sm-4 col-6 mt-5">
                 <h5>Categories</h5>
                 <ul>
-                  <li>Animals</li>
-                  <li>Pets</li>
-                  <li>Pets care</li>
-                  <li>Uncategorized</li>
+                  <li><a href="">Animals</a></li>
+                  <li><a href="">Pets</a></li>
+                  <li><a href="">Pets care</a></li>
+                  <li><a href="">Uncategorized</a></li>
                 </ul>
               </div>
               <div class="Meta col-sm-4 mt-5">
                 <h5>Meta</h5>
                 <ul>
-                  <li>Log in</li>
-                  <li>Entries feed</li>
-                  <li>Comments feed</li>
-                  <li>WordPress.org</li>
+                  <li><a href="">Log in</a></li>
+                  <li><a href="">Entries feed</a></li>
+                  <li><a href="">Comments feed</a></li>
+                  <li><a href="">WordPress.org</a></li>
                 </ul>
               </div>
             </div>
@@ -887,6 +915,11 @@
     <script src="./JS/jquery.countup.js"></script>
     <script>
       $(".counter").countUp();
+    </script>
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
     </script>
   </body>
 </html>

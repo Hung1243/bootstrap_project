@@ -295,6 +295,10 @@ footer a {
   color: #696969;
 }
 
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+}
 .footer-copyright {
   border-top: 1px solid rgba(103, 99, 99, 0.14);
 }
