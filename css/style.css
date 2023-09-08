@@ -89,7 +89,7 @@ p {
 #carousel .carousel-item img {
   /* /* width: 1519px; */
   height: 650px;
-  background: rgba(0, 0, 0, 0.5) no-repeat center;
+  background: no-repeat center;
   background-size: cover;
   position: relative;
   object-fit: cover;
@@ -106,16 +106,19 @@ p {
 }
 
 #carousel .carousel-indicators button {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #fff;
   border: none;
   margin: 0 5px;
 }
 
 #carousel .carousel-indicators .active {
   background-color: #00a651;
+  border-radius: 30px;
+  width: 37px;
+  height: 10px;
 }
 
 .slider-infor .container .carousel-caption {
@@ -125,9 +128,16 @@ p {
 .slider-infor .container .carousel-caption {
   z-index: 2;
 }
+.carousel-caption {
+  bottom: 25%;
+}
 
+.slide-2,
+.slide-4 {
+  left: 670px;
+}
 .carousel-caption h5 {
-  font-size: 66px;
+  font-size: 80px;
   line-height: 76px;
   font-weight: 700;
   color: #fff;
@@ -140,17 +150,18 @@ p {
   text-transform: capitalize;
   line-height: 30px;
   opacity: 0.9;
+  margin-bottom: 60px;
 }
 
 .btn-read {
   border: none;
-  padding: 12px 35px;
-  font-size: 18px;
+  padding: 15px 40px;
+  font-size: 22px;
   line-height: 28px;
   text-transform: capitalize;
   font-weight: 400;
   transition: 0.3s ease-in;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #fff;
   color: #00a651;
   text-decoration: none;
@@ -158,16 +169,17 @@ p {
 
 .btn-about {
   background-color: transparent;
-  border: 1px solid #fff;
-  padding: 12px 35px;
-  font-size: 18px;
+  border: 2px solid #fff;
+  padding: 15px 40px;
+  font-size: 22px;
   line-height: 28px;
   text-transform: capitalize;
   font-weight: 400;
   transition: 0.3s ease-in;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   text-decoration: none;
+  margin-left: 8px;
 }
 
 .btn-about:hover {
@@ -175,7 +187,6 @@ p {
   border: none;
   color: #00a651;
 }
-
 /*aboutUs*/
 .aboutUs .aboutUs-content {
   margin: 0 auto;
@@ -447,7 +458,7 @@ a.read:hover {
   margin-left: auto;
 }
 
-@media (min-width: 5147px) {
+/* @media (min-width: 5147px) {
   .container {
     max-width: 100%;
     padding-right: 30px;
@@ -487,4 +498,4 @@ a.read:hover {
   .container {
     max-width: 1200px;
   }
-}
+} */
